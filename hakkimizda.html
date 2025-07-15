@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title data-lang="about.title">Hakkımızda | Z2Runtime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/lang.js" defer></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Arka plan video */
+    .bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #f0f0f0;
+      max-width: 900px;
+      margin: 4rem auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ARKA PLAN VİDEO -->
+  <video autoplay muted loop class="bg-video">
+    <source src="videos/code.mp4" type="video/mp4" />
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="fotos/logo.jpeg" alt="Z2Runtime Logo" height="40" />
+          <span class="ms-2">Z2Runtime</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="hakkimizda.html" data-lang="nav.about">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link" href="diller.html" data-lang="nav.languages">Programlama Dilleri</a></li>
+          <li class="nav-item"><a class="nav-link" href="projeler.html" data-lang="nav.projects">Projelerimiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html" data-lang="nav.contact">İletişim</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="#" onclick="setLanguage('tr')">TR</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#" onclick="setLanguage('en')">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- METİN İÇERİĞİ -->
+  <div class="content">
+    <h1 data-lang="about.header">Hakkımızda</h1>
+    <p data-lang="about.intro1">Merhaba! Biz <strong>Zeynep</strong> ve <strong>Zekeriya</strong>.</p>
+    <p data-lang="about.intro2"><strong>Z2Runtime</strong> olarak çıktığımız bu yolculukta sizlerle birlikte farklı programlama dillerini öğreniyor, geliştiriyor ve gerçek projelere dönüştürüyoruz.</p>
+    <p data-lang="about.detail1">Python’dan C++’a, JavaScript’ten C#'a kadar birçok alanda temelden ileri seviyeye kodlama anlatıyoruz.</p>
+    <p data-lang="about.detail2">Amacımız, yazılımı sadece satırlardan ibaret bir şey olarak değil; bir <em>düşünme biçimi</em>, bir <em>üretme sanatı</em> olarak anlatmak.</p>
+    <p data-lang="about.detail3">🚀 Yeni başlayanlar için yol gösterici, ileri düzey geliştiriciler için ilham verici bir içerik sunmayı hedefliyoruz.</p>
+    <p data-lang="about.slogan"><strong>Bit by bit. Line by line.</strong></p>
+    <p class="mt-4" data-lang="about.welcome"><strong>Z2Runtime'a hoş geldiniz.</strong></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

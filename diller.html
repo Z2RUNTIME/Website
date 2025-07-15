@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title data-lang="nav.languages">Programlama Dilleri | Z2Runtime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="js/lang.js" defer></script>
+  <style>
+    .language-card {
+      border: 2px solid #0277BD;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #e9f7fa;
+      transition: all 0.3s ease;
+    }
+    .language-card:hover {
+      background-color: #d1f0fb;
+      box-shadow: 0 8px 16px rgba(23,162,184,0.3);
+      cursor: pointer;
+    }
+    .language-card h3 {
+      color: #0277BD;
+      margin-bottom: 15px;
+    }
+    .language-links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #0c5460;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .language-links a:hover {
+      text-decoration: underline;
+      color: #117a8b;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="fotos/logo.jpeg" alt="Z2Runtime Logo" height="40" />
+          <span class="ms-2">Z2Runtime</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html" data-lang="nav.about">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="diller.html" data-lang="nav.languages">Programlama Dilleri</a></li>
+          <li class="nav-item"><a class="nav-link" href="projeler.html" data-lang="nav.projects">Projelerimiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html" data-lang="nav.contact">İletişim</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="#" onclick="setLanguage('tr')">TR</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#" onclick="setLanguage('en')">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <h1 class="mb-4" data-lang="languages.title">Programlama Dilleri</h1>
+
+    <div class="language-card">
+      <h3 data-lang="languages.python">Python</h3>
+      <div class="language-links">
+        <a href="python-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="python-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="python-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.c">C</h3>
+      <div class="language-links">
+        <a href="c-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="c-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="c-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.cpp">C++</h3>
+      <div class="language-links">
+        <a href="cpp-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="cpp-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="cpp-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.csharp">C#</h3>
+      <div class="language-links">
+        <a href="csharp-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="csharp-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="csharp-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.javascript">JavaScript</h3>
+      <div class="language-links">
+        <a href="js-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="js-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="js-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.sql">SQL</h3>
+      <div class="language-links">
+        <a href="sql-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="sql-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="sql-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+    <div class="language-card">
+      <h3 data-lang="languages.embedded">Gömülü Yazılım</h3>
+      <div class="language-links">
+        <a href="gomulu-videolar.html" data-lang="languages.links.videos">Ders Videoları</a>
+        <a href="gomulu-notlar.html" data-lang="languages.links.notes">Ders Notları</a>
+        <a href="gomulu-ornekler.html" data-lang="languages.links.examples">Örnek Uygulamalar</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
