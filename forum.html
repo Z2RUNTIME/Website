@@ -74,6 +74,12 @@
       margin-right: 6px;
     }
 
+    .timestamp {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.3rem;
+    }
+
     @media (max-width: 768px) {
       .forum-layout {
         flex-direction: column;
@@ -179,6 +185,7 @@
 
           postDiv.innerHTML = `
             <h5>${post.title}</h5>
+            <div class="timestamp">${new Date(post.timestamp).toLocaleString()}</div>
             <p>${post.message}</p>
             <div><span class="username" data-lang="forum.postedBy">Paylaşan:</span> ${post.username}</div>
             <button class="btn btn-sm btn-link reply-btn" data-index="${index}" data-lang="forum.replyBtn">Cevapla</button>
@@ -194,13 +201,17 @@
           post.comments.forEach(comment => {
             const commentDiv = document.createElement("div");
             commentDiv.classList.add("comment");
-            commentDiv.innerHTML = `<span class="comment-username">${comment.username}:</span> ${comment.text}`;
+            commentDiv.innerHTML = `
+              <span class="comment-username">${comment.username}:</span> ${comment.text}
+              <br><small class="timestamp">${new Date(comment.timestamp).toLocaleString()}</small>
+            `;
             commentsDiv.appendChild(commentDiv);
           });
 
           postsContainer.appendChild(postDiv);
         });
 
+        // placeholder çeviri için textarea'lara ayrı dokunuyoruz:
         document.querySelectorAll("form.comment-form textarea").forEach(textarea => {
           textarea.setAttribute("placeholder", currentLangData?.forum?.commentPlaceholder || "Cevabınızı yazın...");
         });
@@ -232,7 +243,7 @@
             const textarea = form.querySelector("textarea");
             const commentText = textarea.value.trim();
             if (commentText) {
-              posts[idx].comments.push({ username, text: commentText });
+              posts[idx].comments.push({ username, text: commentText, timestamp: new Date().toISOString() });
               renderPosts();
             }
           });
@@ -258,7 +269,7 @@
         const message = document.getElementById("postMessage").value.trim();
 
         if (title && message) {
-          posts.unshift({ title, message, username, comments: [] });
+          posts.unshift({ title, message, username, comments: [], timestamp: new Date().toISOString() });
           renderPosts();
           postForm.reset();
           postForm.style.display = "none";
