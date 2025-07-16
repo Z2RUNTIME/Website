@@ -8,6 +8,32 @@
   <script src="js/auth.js" defer></script>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="fotos/logo.jpeg" alt="Z2Runtime Logo" height="40" />
+        <span class="ms-2">Z2Runtime</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="hakkimizda.html" data-lang="nav.about">Hakkımızda</a></li>
+          <li class="nav-item"><a class="nav-link" href="diller.html" data-lang="nav.languages">Programlama Dilleri</a></li>
+          <li class="nav-item"><a class="nav-link" href="projeler.html" data-lang="nav.projects">Projelerimiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html" data-lang="nav.contact">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#" onclick="handleForumClick(event)" data-lang="nav.forum">Z2Forum</a></li>
+          <li class="nav-item mx-2"><a class="nav-link text-light" href="#" onclick="setLanguage('tr')">TR</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#" onclick="setLanguage('en')">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login form -->
   <div class="container mt-5" style="max-width: 400px;">
     <h2 data-lang="login.header">Giriş Yap</h2>
     <form id="loginForm">
@@ -19,31 +45,49 @@
         <label for="password" class="form-label" data-lang="login.passwordLabel">Parola</label>
         <input type="password" class="form-control" id="password" required />
       </div>
-      <button type="submit" class="btn btn-primary" data-lang="login.submitBtn">Giriş</button>
-      <a href="register.html" class="btn btn-link" data-lang="login.registerLink">Yeni misin? Kayıt ol</a>
+      <button type="submit" class="btn btn-primary w-100" data-lang="login.submitBtn">Giriş</button>
+      <a href="register.html" class="btn btn-link w-100 text-center" data-lang="login.registerLink">Yeni misin? Kayıt ol</a>
     </form>
   </div>
 
-<script>
-  const form = document.getElementById("loginForm");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    const username = document.getElementById("username").value.trim();
-    const password = document.getElementById("password").value.trim();
+  <script>
+    const form = document.getElementById("loginForm");
 
-    const savedUsername = localStorage.getItem("registeredUsername");
-    const savedPassword = localStorage.getItem("registeredPassword");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
 
-    if (username === savedUsername && password === savedPassword) {
-      localStorage.setItem("loggedIn", "true");
-      localStorage.setItem("username", username);
-      alert(currentLangData["login.successMsg"] || "Giriş başarılı!");
-      window.location.href = "forum.html";
-    } else {
-      alert(currentLangData["login.errorMsg"] || "Kullanıcı adı veya parola yanlış.");
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const savedUsername = localStorage.getItem("registeredUsername");
+      const savedPassword = localStorage.getItem("registeredPassword");
+
+      if (!savedUsername || !savedPassword) {
+        alert(currentLangData?.["login.noUserMsg"] || "Henüz kayıtlı bir kullanıcı yok. Lütfen önce kayıt olun.");
+        return;
+      }
+
+      if (username === savedUsername && password === savedPassword) {
+        localStorage.setItem("loggedIn", "true");
+        localStorage.setItem("username", username);
+        alert(currentLangData?.["login.successMsg"] || "Giriş başarılı!");
+        window.location.href = "forum.html";
+      } else {
+        alert(currentLangData?.["login.errorMsg"] || "Kullanıcı adı veya parola yanlış.");
+      }
+    });
+
+    function handleForumClick() {
+      const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+      if (isLoggedIn) {
+        window.location.href = "forum.html";
+      } else {
+        alert(currentLangData?.["login.mustLogin"] || "Z2Forum'a erişmek için giriş yapmalısınız.");
+        window.location.href = "login.html";
+      }
     }
-  });
-</script>
+  </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
