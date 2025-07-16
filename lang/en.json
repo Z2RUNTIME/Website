@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "About Us",
+    "languages": "Programming Languages",
+    "projects": "Our Projects",
+    "contact": "Contact",
+    "forum": "Z2Forum"
+  },
+  "home": {
+    "title": "Home Page | Z2Runtime",
+    "welcome": "Welcome to Z2Runtime!",
+    "subtitle": "Step into the coding world with real projects."
+  },
+  "about": {
+    "title": "About Us | Z2Runtime",
+    "header": "About Us",
+    "intro1": "Hello! We are <strong>Zeynep</strong> and <strong>Zekeriya</strong>.",
+    "intro2": "As Z2Runtime, we embark on this journey learning, developing, and turning programming languages into real projects with you.",
+    "detail1": "We teach coding from basics to advanced levels in many languages from Python to C++, JavaScript to C#.",
+    "detail2": "Our aim is to present software not just as lines of code but as a way of thinking, a creative art.",
+    "detail3": "🚀 We aim to offer guidance for beginners and inspiration for advanced developers.",
+    "slogan": "Bit by bit. Line by line.",
+    "welcome": "Welcome to Z2Runtime."
+  },
+  "languages": {
+    "title": "Programming Languages | Z2Runtime",
+    "header": "Programming Languages",
+    "python": "Python",
+    "c": "C",
+    "cpp": "C++",
+    "csharp": "C#",
+    "javascript": "JavaScript",
+    "sql": "SQL",
+    "embedded": "Embedded Software",
+    "links": {
+      "videos": "Lesson Videos",
+      "notes": "Lesson Notes",
+      "examples": "Sample Applications"
+    }
+  },
+  "contact": {
+    "title": "Contact | Z2Runtime",
+    "header": "Contact",
+    "email": "z2runtimeofficial@gmail.com",
+    "youtube": "@Z2RuntimeOfficial",
+    "linkedin": "Z2Runtime"
+  },
+  "projects": {
+    "title": "Our Projects | Z2Runtime",
+    "header": "Our Projects",
+    "project1": {
+      "title": "Driver Fatigue Detection System",
+      "description": "We developed an AI-based system that detects driver fatigue using image processing (OpenCV) and real-time sensor data (ECG)."
+    },
+    "project2": {
+      "title": "Sign Language Recognition",
+      "description": "A deep learning-based application that recognizes Turkish Sign Language in real-time from camera input."
+    },
+    "project3": {
+      "title": "Embedded Software Applications",
+      "description": "Projects developing embedded systems for industrial and hobby devices with hardware-software integration."
+    },
+    "project4": {
+      "title": "SQL Applications",
+      "description": "Comprehensive SQL projects and analyses used in database design, querying, and optimization processes."
+    }
+  },
+  "forum": {
+  "title": "Z2Forum | Z2Runtime",
+  "noPosts": "No posts yet.",
+  "newPostBtn": "New Post",
+  "postTitleLabel": "Title",
+  "postMessageLabel": "Message",
+  "sendBtn": "Send",
+  "cancelBtn": "Cancel",
+  "postedBy": "Posted by:",
+  "replyBtn": "Reply",
+  "commentPlaceholder": "Write your reply...",
+  "logout": "Log Out"
+  },
+  "login": {
+    "title": "Login | Z2Runtime",
+    "header": "Login",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submitBtn": "Login",
+    "registerLink": "New here? Register",
+    "successMsg": "Login successful!",
+    "errorMsg": "Incorrect username or password.",
+    "mustLogin": "You must log in to access Z2Forum."
+  },
+  "register": {
+    "title": "Register | Z2Runtime",
+    "header": "Register",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "submitBtn": "Register",
+    "loginLink": "Already have an account? Login",
+    "successMsg": "Registration successful! You can now log in.",
+    "errorMsg": "Please enter a valid username and password."
+  }
+}

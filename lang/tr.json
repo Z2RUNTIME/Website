@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "languages": "Programlama Dilleri",
+    "projects": "Projelerimiz",
+    "contact": "İletişim",
+    "forum": "Z2Forum"
+  },
+  "home": {
+    "title": "Ana Sayfa | Z2Runtime",
+    "welcome": "Z2Runtime'a Hoş Geldiniz!",
+    "subtitle": "Gerçek projelerle kodlama dünyasına adım atın."
+  },
+  "about": {
+    "title": "Hakkımızda | Z2Runtime",
+    "header": "Hakkımızda",
+    "intro1": "Merhaba! Biz <strong>Zeynep</strong> ve <strong>Zekeriya</strong>.",
+    "intro2": "<strong>Z2Runtime</strong> olarak çıktığımız bu yolculukta sizlerle birlikte farklı programlama dillerini öğreniyor, geliştiriyor ve gerçek projelere dönüştürüyoruz.",
+    "detail1": "Python’dan C++’a, JavaScript’ten C#'a kadar birçok alanda temelden ileri seviyeye kodlama anlatıyoruz.",
+    "detail2": "Amacımız, yazılımı sadece satırlardan ibaret bir şey olarak değil; bir <em>düşünme biçimi</em>, bir <em>üretme sanatı</em> olarak anlatmak.",
+    "detail3": "🚀 Yeni başlayanlar için yol gösterici, ileri düzey geliştiriciler için ilham verici bir içerik sunmayı hedefliyoruz.",
+    "slogan": "Bit by bit. Line by line.",
+    "welcome": "Z2Runtime'a hoş geldiniz."
+  },
+  "languages": {
+    "title": "Programlama Dilleri | Z2Runtime",
+    "header": "Programlama Dilleri",
+    "python": "Python",
+    "c": "C",
+    "cpp": "C++",
+    "csharp": "C#",
+    "javascript": "JavaScript",
+    "sql": "SQL",
+    "embedded": "Gömülü Yazılım",
+    "links": {
+      "videos": "Ders Videoları",
+      "notes": "Ders Notları",
+      "examples": "Örnek Uygulamalar"
+    }
+  },
+  "contact": {
+      "title": "İletişim | Z2Runtime",
+      "header": "İletişim",
+      "email": "z2runtimeofficial@gmail.com",
+      "youtube": "@Z2RuntimeOfficial",
+      "linkedin": "Z2Runtime"
+  },
+  "projects": {
+    "title": "Projelerimiz | Z2Runtime",
+    "header": "Projelerimiz",
+    "project1": {
+      "title": "Sürücü Yorgunluk Tespit Sistemi",
+      "description": "Görüntü işleme (OpenCV) ve gerçek zamanlı sensör verileri (EKG) kullanarak sürücü yorgunluğunu tespit eden yapay zeka tabanlı bir sistem geliştirdik."
+    },
+    "project2": {
+      "title": "İşaret Dili Tanıma",
+      "description": "Kameradan alınan görüntülerle Türk İşaret Dili'nin gerçek zamanlı tanınmasını sağlayan derin öğrenme tabanlı uygulama."
+    },
+    "project3": {
+      "title": "Gömülü Yazılım Uygulamaları",
+      "description": "Endüstriyel ve hobi amaçlı cihazlar için gömülü sistemler geliştirme ve donanım yazılım entegrasyonu projeleri."
+    },
+    "project4": {
+      "title": "SQL Uygulamaları",
+      "description": "Veri tabanı tasarımı, sorgulama ve optimizasyon süreçlerinde kullanılan kapsamlı SQL projeleri ve analizleri."
+    }
+  },
+  "forum": {
+    "title": "Z2Forum | Z2Runtime",
+    "noPosts": "Henüz bir paylaşım yapılmadı.",
+    "newPostBtn": "Paylaşım Yap",
+    "postTitleLabel": "Başlık",
+    "postMessageLabel": "Mesaj",
+    "sendBtn": "Gönder",
+    "cancelBtn": "İptal",
+    "postedBy": "Paylaşan:",
+    "replyBtn": "Cevapla",
+    "commentPlaceholder": "Cevabınızı yazın...",
+    "logout": "Çıkış Yap"
+  },
+  "login": {
+    "title": "Giriş | Z2Runtime",
+    "header": "Giriş Yap",
+    "usernameLabel": "Kullanıcı Adı",
+    "passwordLabel": "Parola",
+    "submitBtn": "Giriş",
+    "registerLink": "Yeni misin? Kayıt ol",
+    "successMsg": "Giriş başarılı!",
+    "errorMsg": "Kullanıcı adı veya parola yanlış.",
+    "mustLogin": "Z2Forum'a erişmek için giriş yapmalısınız."
+  },
+  "register": {
+    "title": "Kayıt Ol | Z2Runtime",
+    "header": "Kayıt Ol",
+    "usernameLabel": "Kullanıcı Adı",
+    "passwordLabel": "Parola",
+    "submitBtn": "Kayıt Ol",
+    "loginLink": "Zaten hesabın var mı? Giriş yap",
+    "successMsg": "Kayıt başarılı! Şimdi giriş yapabilirsiniz.",
+    "errorMsg": "Lütfen geçerli bir kullanıcı adı ve parola girin."
+  }
+}
